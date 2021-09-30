@@ -1,0 +1,380 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+@font-face {
+    font-family: alkinions;
+    src: url(../img/alKinions.ttf);
+}
+
+/*menú de navegación*/
+
+.logo {
+    width: 50%;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+}
+
+.listaNav {
+    margin-right: 3vw;
+}
+
+.categoriasNav {
+    box-shadow: 7px 7px 15px #00000091;
+    padding: 10px;
+    background-color: rgb(228, 193, 248);
+    transition: transform .2s;
+    margin: 1vw;
+    font-family: alkinions;
+}
+
+@media only screen and (min-width: 990px) {
+    .boxNav {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* inicio */
+
+.videoContenedor video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+header, #imgMostris{
+    position: relative;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 990px) {
+    .videoContenedor {
+        object-fit: cover;
+        height: 100%;
+        
+    }
+}
+
+#imgMostris {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#imgMostris img {
+    vertical-align:middle;
+}
+
+.animated__animated.animate__fadeInDown {
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+#quienesSomos {
+    width: 100%;
+    background-color: rgba(219, 138, 183, 0.295);
+    padding: 3%;
+}
+
+.boxBienvenidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.animate__animated.animate__fadeIn {
+    animation-duration: 3s;
+}
+
+.boton:hover {
+    background-color: rgba(108, 210, 235, 0.363);
+    color: rgb(46, 171, 202);
+}
+
+.publicaciones {
+    margin: 50px auto;
+}
+
+.publicaciones iframe {
+    width: 320px;
+    height: 460px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-family: alkinions;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+/*seccion conocenos*/
+
+#conocenos {
+    margin: 10vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.boxInfo {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 7px 7px 15px #00000091;
+}
+
+.boxInfo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#categoriasJuegos {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.infoJuegos {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 7px 7px 15px #00000091;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.infoJuegos img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.infoJuegos p {
+    line-height: 30px;
+}
+
+/*seccion juegos */
+#juegos {
+    font-family: alkinions;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5%;
+}
+
+.titulo {
+    background-color: rgba(116, 31, 80, 0.712);
+    height: 50px;
+    text-align: center;
+}
+
+.titulo h2 {
+    padding: 10px;
+}
+
+
+.fotoJuegos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#juegos img {
+    width: 250px;
+    height: 250px;
+    margin: 20px 20px;
+}
+
+.boxJuegos {
+    box-shadow: 7px 7px 15px #00000091;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.164);
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    transition: transform .2s
+}
+
+.boxJuegos:hover {
+    transform: scale(1.3)
+}
+
+/* galería */
+#tituloGaleria {
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 100px;
+    }
+    
+    #galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 450px);
+        grid-gap:40px;
+        grid-template-areas: "foto1 foto2 foto3"
+                             "foto4 foto5 foto6"
+                             "foto7 foto8 foto9";
+        margin: 20px;
+        margin-top: 50px;
+    }
+    
+    #galeria img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 7px 7px 15px #00000091; 
+        border: 30px solid rgba(255, 255, 255, 0.164);
+    }
+    
+    #a {
+        grid-area: foto1;
+    }
+    
+    #b {
+        grid-area: foto2;
+    }
+    
+    #c {
+        grid-area: foto3;
+    }
+    
+    #d {
+        grid-area: foto4;
+    }
+    
+    #e {
+        grid-area: foto5;
+    }
+    
+    #f {
+        grid-area: foto6;
+    }
+    
+    #g {
+        grid-area: foto7;
+    }
+    
+    #h {
+        grid-area: foto8;
+    }
+    
+    #i {
+        grid-area: foto9;
+    }
+
+
+/*seccion contacto*/
+
+.tituloContacto {
+    text-align: center;
+    margin: 5vh 25vw;
+    background-image: linear-gradient(to right, rgba(116, 31, 80, 0.712), rgba(121, 228, 255, 0.822));
+    padding: 2vh 2vw;
+  }
+  
+  .comoPedir {
+    display: flex;
+    flex-direction: row wrap;
+    margin: 2vh 2vw;
+    height: 60vh;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .comoPedir p {
+      font-family: alkinions;
+  }
+
+  .box {
+    background-color: white;
+    width: 12vw;
+    height: 80%;
+    box-shadow: 0 0 15px 0 grey;
+    margin: 2vh 2vw;
+    font-family: alKinions;
+    padding: 5vh 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    text-overflow: hidden;
+  }
+  
+  .box:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 2s;
+  }
+  
+  #formulario {
+    margin: 50px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 15px 0 grey;
+  }
+
+    .formularioBox {
+    background-image: linear-gradient(to bottom, #c6528f, #d4ac2d, #31c5ae);
+    text-align: center;
+    font-family: alKinions;
+    text-transform: uppercase;
+    padding: 3vh 3vw;
+  }
+
+/* pie de pagina */
+
+footer {
+    background-color: rgba(108, 210, 235, 0.363);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    align-items: center;
+}
+
+.textoFooter {
+    font-size: 150%;
+    text-align: center;
+    font-family: alkinions;
+    text-transform: uppercase;
+}
+
+.textoFooter p {
+    font-size: small;
+    line-height: 2;
+}
+
+.redSocial {
+    width: 40px;
+    height: 40px;
+}

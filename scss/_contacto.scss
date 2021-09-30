@@ -1,0 +1,110 @@
+$ancho: 500px;
+
+.bodyContacto {
+    background-image: url(../img/fondoContacto.png);
+    background-repeat: no-repeat;
+
+    h2 {
+        margin: 10vh;
+    }
+}
+
+.tituloContacto {
+    text-align: center;
+    background-image: linear-gradient(to right, $lila, $claro, $celeste);
+    padding: 2vh 2vw;
+}
+
+.comoPedir {
+    margin: 3vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+
+    .comoPedir__box {
+        background-color: rgb(255, 255, 255);
+        padding: 30px;
+        width: 50%;
+        text-align: center;
+        box-shadow: 7px 7px 15px #00000091;
+        height: 100%;
+
+        p {
+            font-family: alkinions;
+        }
+
+    }
+}
+
+#formulario {
+    margin: 50px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 15px 0 grey;
+
+    h3 {
+        text-align: center;
+    }
+
+    .formularioBox {
+        background-image: linear-gradient(to bottom, $rosa, $claro, $celeste);
+        text-align: center;
+        font-family: alKinions;
+        text-transform: uppercase;
+        padding: 3vh 3vw;
+    }
+}
+
+.backgroundOperaciones {
+    background-image: url(../img/fondoMostris.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .operaciones {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    
+        .img1 {
+            width: $ancho/2;
+        }
+    
+        .img2 {
+            width: $ancho;
+        }
+    }
+}
+
+    /* media queris */
+    
+    @media only screen and (max-width:1160px) {
+        .comoPedir {
+            display: flex;
+            flex-direction: column;
+    
+            .comoPedir__box {
+                margin: 3%;
+            }
+        }
+    }
+
+@media only screen and (max-width:650px) {
+    .comoPedir {
+        display: flex;
+        flex-direction: column;
+
+        .comoPedir__box {
+            margin: 3%;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #formulario {
+        margin: 10vw;
+    }
+}

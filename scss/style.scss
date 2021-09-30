@@ -1,0 +1,31 @@
+@import "general";
+@import "navbar";
+@import "index";
+@import "conocenos";
+@import "juegos";
+@import "galeria";
+@import "contacto";
+@import "footer";
+
+/* fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@font-face {
+    font-family: alkinions;
+    src: url(../img/alKinions.ttf);
+}
+
+/* 404 */
+
+.error {
+    background-image: url(../img/fondoMostris404.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    height: 80vh;
+}
+

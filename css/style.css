@@ -409,6 +409,7 @@ header {
 .boxGaleria img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  border: 30px solid #8fcac4;
 }
 
 .bodyContacto {

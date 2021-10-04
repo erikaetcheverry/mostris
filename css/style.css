@@ -243,6 +243,7 @@ header {
           justify-content: space-evenly;
   -webkit-box-shadow: 7px 7px 15px #00000091;
           box-shadow: 7px 7px 15px #00000091;
+  height: 100%;
 }
 
 #boxInfo .boxInfo__mostris img {
@@ -345,14 +346,44 @@ header {
   background-attachment: fixed;
   font-family: alkinions;
   text-align: center;
-  text-transform: uppercase;
 }
 
-.bodyJuegos #juegos {
-  margin: 3%;
+.bodyJuegos .boxTitulo__padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.bodyJuegos #juegos .juegos__box {
+.bodyJuegos .boxTitulo__padre .boxTitulo__hijo {
+  background-color: rgba(255, 255, 255, 0.164);
+  -webkit-box-shadow: 7px 7px 15px #00000091;
+          box-shadow: 7px 7px 15px #00000091;
+  margin: 2%;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyJuegos .boxTitulo__padre .boxTitulo__hijo img {
+  height: 100%;
+}
+
+.bodyJuegos .boxTitulo__padre .boxTitulo__hijo a {
+  color: black;
+}
+
+.bodyJuegos .juegos__box {
   -webkit-box-shadow: 7px 7px 15px #00000091;
           box-shadow: 7px 7px 15px #00000091;
   width: 300px;
@@ -377,7 +408,7 @@ header {
   transition: transform .2s, -webkit-transform .2s;
 }
 
-.bodyJuegos #juegos .juegos__box img {
+.bodyJuegos .juegos__box img {
   width: 250px;
   height: 250px;
   margin: 20px 20px;

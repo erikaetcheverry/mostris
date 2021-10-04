@@ -6,6 +6,7 @@ $celeste: #a2c9c9;
 $claro: #f4ecd4;
 $marron: #ccbc85;
 $blanco: #ffffff;
+$transparente: rgba(255, 255, 255, 0.164);
 
 .videoInicio video {
     position: fixed;
@@ -41,7 +42,7 @@ header {
 
 #infoInicio {
     background-color: $claro;
-    padding:3rem;
+    padding: 3rem;
 
     .animate_animated.animate__swing {
         animation-delay: 0s;
@@ -53,7 +54,7 @@ header {
         color: $blanco;
         border: 2px solid $lila;
     }
-    
+
     .boton:hover {
         background-color: #cac6d6;
         color: $blanco;
@@ -61,30 +62,30 @@ header {
     }
 
     .monstruo4 img {
-    animation-name: moov;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 8s;
+        animation-name: moov;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 8s;
     }
 
     @keyframes moov {
         0% {
             transform: translateX(0px);
         }
-    
+
         25% {
             transform: translateX(50px);
         }
-    
+
         50% {
             transform: translateY(-50px);
         }
-    
+
         75% {
             transform: translateY(50px);
             transform: translateX(-50px);
         }
-    
+
         100% {
             transform: translateX(0px);
             transform: translateY(0px);

@@ -13,7 +13,19 @@ h4 {
 }
 
 p {
-font-family:'Dosis', cursive;
-line-height: 2rem;
-font-size: 20px;
+    font-family: 'Dosis', cursive;
+    line-height: 2rem;
+    font-size: 20px;
 }
+
+/* variables */
+$turquesa: #8fcac4;
+$rosa: #dcb4bc;
+$rosaclaro: #fbdbd3;
+$lila: #b4accb;
+$celeste: #a2c9c9;
+$claro: #f4ecd4;
+$marron: #ccbc85;
+$blanco: #ffffff;
+$negro: #000000;
+$transparente: rgba(255, 255, 255, 0.164);

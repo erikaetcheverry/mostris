@@ -23,6 +23,7 @@ p {
   font-size: 20px;
 }
 
+/* variables */
 .logo {
   width: 50%;
   -webkit-filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
@@ -406,17 +407,36 @@ header {
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
+  text-transform: uppercase;
+}
+
+.bodyJuegos .juegos__box .juegos__box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .bodyJuegos .juegos__box img {
   width: 250px;
   height: 250px;
   margin: 20px 20px;
+  border-style: inset;
 }
 
-.juegos__box:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.bodyJuegos .juegos__box .botonJuegos {
+  background-color: #fde9a7;
+  border: 2px solid #ccbc85;
+  margin: 2%;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+.bodyJuegos .juegos__box .botonJuegos a {
+  color: #000000;
+}
+
+.bodyJuegos .juegos__box .botonJuegos:hover {
+  background-color: #cac6d6;
+  border: 2px solid #b4accb;
 }
 
 .bodyGaleria {

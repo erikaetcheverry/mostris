@@ -28,7 +28,6 @@
         }
     }
 
-
     .juegos__box {
         box-shadow: 7px 7px 15px #00000091;
         width: 300px;
@@ -39,15 +38,36 @@
         align-items: center;
         margin: 30px;
         transition: transform .2s;
+        text-transform: uppercase;
+
+
+        .juegos__box:hover {
+            transform: scale(1.1)
+        }
 
         img {
             width: 250px;
             height: 250px;
             margin: 20px 20px;
+            border-style: inset;
         }
-    }
-}
 
-.juegos__box:hover {
-    transform: scale(1.1)
+        .botonJuegos {
+            background-color: #fde9a7;
+            border: 2px solid $marron;
+            margin: 2%;
+            text-transform: uppercase;
+            margin-bottom: 5%;
+
+            a {
+                color: $negro;
+            }
+        }
+
+        .botonJuegos:hover {
+            background-color: #cac6d6;
+            border: 2px solid $lila;
+        }
+
+    }
 }

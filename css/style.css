@@ -439,6 +439,16 @@ header {
   border: 2px solid #b4accb;
 }
 
+/* media queris */
+@media only screen and (max-width: 1140px) {
+  .boxTitulo__hijo img {
+    display: none;
+  }
+  .boxTitulo__titulo {
+    padding: 5%;
+  }
+}
+
 .bodyGaleria {
   background-image: url(../img/fondoGaleria.png);
   background-repeat: no-repeat;

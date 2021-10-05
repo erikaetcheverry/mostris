@@ -71,3 +71,15 @@
 
     }
 }
+
+/* media queris */
+
+@media only screen and (max-width: 1140px) {
+    .boxTitulo__hijo img {
+        display: none;
+    }
+
+    .boxTitulo__titulo {
+        padding: 5%;
+    }
+}

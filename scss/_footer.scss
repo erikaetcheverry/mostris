@@ -8,17 +8,6 @@ footer {
     align-items: center;
 }
 
-@media only screen and (max-width: 756px) {
-    footer {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .textoFooter {
-        margin: 3%;
-    }
-}
-
 .textoFooter {
     font-size: 150%;
     text-align: center;

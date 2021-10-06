@@ -6,6 +6,7 @@
 @import "galeria";
 @import "contacto";
 @import "footer";
+@import "mediaQueris";
 
 /* fuentes */
 
@@ -16,13 +17,13 @@
 
 @font-face {
     font-family: alkinions;
-    src: url(../img/alKinions.ttf);
+    src: url(../multimedia/alKinions.ttf);
 }
 
 /* 404 */
 
 .error {
-    background-image: url(../img/fondoMostris404.png);
+    background-image: url(../multimedia/img_mostris/fondoMostris404.png);
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;

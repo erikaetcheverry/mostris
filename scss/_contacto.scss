@@ -67,29 +67,29 @@ $ancho: 500px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-    
+
         .img1 {
             width: $ancho/2;
         }
-    
+
         .img2 {
             width: $ancho;
         }
     }
 }
 
-    /* media queris */
-    
-    @media only screen and (max-width:1160px) {
-        .comoPedir {
-            display: flex;
-            flex-direction: column;
-    
-            .comoPedir__box {
-                margin: 3%;
-            }
+/* media queris */
+
+@media only screen and (max-width:1160px) {
+    .comoPedir {
+        display: flex;
+        flex-direction: column;
+
+        .comoPedir__box {
+            margin: 3%;
         }
     }
+}
 
 @media only screen and (max-width:650px) {
     .comoPedir {
@@ -106,5 +106,11 @@ $ancho: 500px;
 @media only screen and (min-width:768px) {
     #formulario {
         margin: 10vw;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .operaciones {
+        display: none;
     }
 }

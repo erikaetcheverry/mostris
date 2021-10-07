@@ -1,18 +1,15 @@
 $ancho: 500px;
 
 .bodyContacto {
-    background-image: url(../img/fondoContacto.png);
+    background-image: url(../multimedia/img_mostris/fondoContacto.png);
     background-repeat: no-repeat;
-
-    h2 {
-        margin: 10vh;
-    }
 }
 
 .tituloContacto {
     text-align: center;
     background-image: linear-gradient(to right, $lila, $claro, $celeste);
     padding: 2vh 2vw;
+    margin: 5vh;
 }
 
 .comoPedir {
@@ -38,27 +35,49 @@ $ancho: 500px;
     }
 }
 
-#formulario {
-    margin: 50px;
-    display: block;
-    margin: auto;
-    box-shadow: 0 0 15px 0 grey;
+.formulario_padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
 
-    h3 {
-        text-align: center;
-    }
+    .formulario_hijo {
+        margin: 50px;
+        margin: auto;
+        box-shadow: 0 0 15px 0 grey;
 
-    .formularioBox {
-        background-image: linear-gradient(to bottom, $rosa, $claro, $celeste);
-        text-align: center;
-        font-family: alKinions;
-        text-transform: uppercase;
-        padding: 3vh 3vw;
+        h3 {
+            text-align: center;
+        }
+
+        .formularioBox {
+            background-image: linear-gradient(to bottom, $rosa, $claro, $celeste);
+            text-align: center;
+            font-family: alKinions;
+            text-transform: uppercase;
+            padding: 3vh 3vw;
+
+            input {
+                background-color: $lila;
+                color: $blanco;
+                border: 4px solid $lila;
+                color: $negro;
+            }
+
+            input:hover {
+                background-color: #cac6d6;
+                color: $blanco;
+                border: 4px solid $lila;
+                color: $negro;
+            }
+        }
     }
 }
 
+
+
 .backgroundOperaciones {
-    background-image: url(../img/fondoMostris.png);
+    background-image: url(../multimedia/img_mostris/fondoMostris.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -75,42 +94,5 @@ $ancho: 500px;
         .img2 {
             width: $ancho;
         }
-    }
-}
-
-/* media queris */
-
-@media only screen and (max-width:1160px) {
-    .comoPedir {
-        display: flex;
-        flex-direction: column;
-
-        .comoPedir__box {
-            margin: 3%;
-        }
-    }
-}
-
-@media only screen and (max-width:650px) {
-    .comoPedir {
-        display: flex;
-        flex-direction: column;
-
-        .comoPedir__box {
-            margin: 3%;
-            width: 100%;
-        }
-    }
-}
-
-@media only screen and (min-width:768px) {
-    #formulario {
-        margin: 10vw;
-    }
-}
-
-@media only screen and (max-width:900px) {
-    .operaciones {
-        display: none;
     }
 }

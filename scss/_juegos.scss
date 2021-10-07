@@ -1,5 +1,5 @@
 .bodyJuegos {
-    background-image: url(../img/fondoJuegos.png);
+    background-image: url(../multimedia/img_mostris/fondoJuegos.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: alkinions;
@@ -11,7 +11,7 @@
 
         .boxTitulo__hijo {
             background-color: $transparente;
-            box-shadow: 7px 7px 15px #00000091;
+            box-shadow: 7px 7px 15px $sombra;
             margin: 2%;
             width: 75%;
             display: flex;
@@ -23,13 +23,13 @@
             }
 
             a {
-                color: black;
+                color: $negro;
             }
         }
     }
 
     .juegos__box {
-        box-shadow: 7px 7px 15px #00000091;
+        box-shadow: 7px 7px 15px $sombra;
         width: 300px;
         display: flex;
         flex-direction: column;
@@ -69,17 +69,5 @@
             border: 2px solid $lila;
         }
 
-    }
-}
-
-/* media queris */
-
-@media only screen and (max-width: 1140px) {
-    .boxTitulo__hijo img {
-        display: none;
-    }
-
-    .boxTitulo__titulo {
-        padding: 5%;
     }
 }

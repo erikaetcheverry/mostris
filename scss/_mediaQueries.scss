@@ -1,3 +1,15 @@
+@media only screen and (max-width:650px) {
+    .comoPedir {
+        display: flex;
+        flex-direction: column;
+
+        .comoPedir__box {
+            margin: 3%;
+            width: 100%;
+        }
+    }
+}
+
 @media only screen and (max-width: 756px) {
     footer {
         display: flex;
@@ -6,6 +18,12 @@
 
     .textoFooter {
         margin: 3%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #formulario {
+        margin: 10vw;
     }
 }
 
@@ -27,10 +45,37 @@
     }
 }
 
+@media only screen and (max-width:900px) {
+    .backgroundOperaciones {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 990px) {
     .boxNav {
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .boxTitulo__hijo img {
+        display: none;
+    }
+
+    .boxTitulo__titulo {
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width:1160px) {
+    .comoPedir {
+        display: flex;
+        flex-direction: column;
+
+        .comoPedir__box {
+            margin: 3%;
+        }
     }
 }
 

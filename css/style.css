@@ -202,15 +202,8 @@ header {
   text-align: center;
 }
 
-/* media queris */
-@media only screen and (max-width: 1300px) {
-  .videoInicio video {
-    display: none;
-  }
-}
-
 .bodyConocenos {
-  background-image: url(../img/fondoConocenos.png);
+  background-image: url(../multimedia/img_mostris/fondoConocenos.png);
   background-repeat: no-repeat;
 }
 
@@ -229,7 +222,7 @@ header {
 }
 
 #boxInfo .boxInfo__mostris {
-  background-color: white;
+  background-color: #ffffff;
   padding: 30px;
   width: 50%;
   text-align: center;
@@ -290,60 +283,8 @@ header {
   line-height: 30px;
 }
 
-@media only screen and (max-width: 1280px) {
-  #boxInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  #boxInfo .boxInfo__mostris {
-    margin: 3%;
-  }
-  #categoriasJuegos {
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    grid-row-gap: 5%;
-    grid-column-gap: 5%;
-  }
-}
-
-@media only screen and (max-width: 778px) {
-  .boxInfo__mostris {
-    width: 100%;
-  }
-  #categoriasJuegos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  #categoriasJuegos .infoJuegos {
-    margin: 3%;
-    width: 100%;
-  }
-}
-
 .bodyJuegos {
-  background-image: url(../img/fondoJuegos.png);
+  background-image: url(../multimedia/img_mostris/fondoJuegos.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: alkinions;
@@ -360,7 +301,7 @@ header {
 }
 
 .bodyJuegos .boxTitulo__padre .boxTitulo__hijo {
-  background-color: rgba(255, 255, 255, 0.164);
+  background-color: #ffffff3b;
   -webkit-box-shadow: 7px 7px 15px #00000091;
           box-shadow: 7px 7px 15px #00000091;
   margin: 2%;
@@ -382,7 +323,7 @@ header {
 }
 
 .bodyJuegos .boxTitulo__padre .boxTitulo__hijo a {
-  color: black;
+  color: #000000;
 }
 
 .bodyJuegos .juegos__box {
@@ -396,7 +337,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.164);
+  background-color: #ffffff3b;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -440,18 +381,8 @@ header {
   border: 2px solid #b4accb;
 }
 
-/* media queris */
-@media only screen and (max-width: 1140px) {
-  .boxTitulo__hijo img {
-    display: none;
-  }
-  .boxTitulo__titulo {
-    padding: 5%;
-  }
-}
-
 .bodyGaleria {
-  background-image: url(../img/fondoGaleria.png);
+  background-image: url(../multimedia/img_mostris/fondoGaleria.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -474,12 +405,8 @@ header {
 }
 
 .bodyContacto {
-  background-image: url(../img/fondoContacto.png);
+  background-image: url(../multimedia/img_mostris/fondoContacto.png);
   background-repeat: no-repeat;
-}
-
-.bodyContacto h2 {
-  margin: 10vh;
 }
 
 .tituloContacto {
@@ -487,6 +414,7 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(#b4accb), color-stop(#f4ecd4), to(#a2c9c9));
   background-image: linear-gradient(to right, #b4accb, #f4ecd4, #a2c9c9);
   padding: 2vh 2vw;
+  margin: 5vh;
 }
 
 .comoPedir {
@@ -517,19 +445,31 @@ header {
   font-family: alkinions;
 }
 
-#formulario {
+.formulario_padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vh;
+}
+
+.formulario_padre .formulario_hijo {
   margin: 50px;
-  display: block;
   margin: auto;
   -webkit-box-shadow: 0 0 15px 0 grey;
           box-shadow: 0 0 15px 0 grey;
 }
 
-#formulario h3 {
+.formulario_padre .formulario_hijo h3 {
   text-align: center;
 }
 
-#formulario .formularioBox {
+.formulario_padre .formulario_hijo .formularioBox {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#dcb4bc), color-stop(#f4ecd4), to(#a2c9c9));
   background-image: linear-gradient(to bottom, #dcb4bc, #f4ecd4, #a2c9c9);
   text-align: center;
@@ -538,8 +478,22 @@ header {
   padding: 3vh 3vw;
 }
 
+.formulario_padre .formulario_hijo .formularioBox input {
+  background-color: #b4accb;
+  color: #ffffff;
+  border: 4px solid #b4accb;
+  color: #000000;
+}
+
+.formulario_padre .formulario_hijo .formularioBox input:hover {
+  background-color: #cac6d6;
+  color: #ffffff;
+  border: 4px solid #b4accb;
+  color: #000000;
+}
+
 .backgroundOperaciones {
-  background-image: url(../img/fondoMostris.png);
+  background-image: url(../multimedia/img_mostris/fondoMostris.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -565,50 +519,6 @@ header {
   width: 500px;
 }
 
-/* media queris */
-@media only screen and (max-width: 1160px) {
-  .comoPedir {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .comoPedir .comoPedir__box {
-    margin: 3%;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .comoPedir {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .comoPedir .comoPedir__box {
-    margin: 3%;
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #formulario {
-    margin: 10vw;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .operaciones {
-    display: none;
-  }
-}
-
 footer {
   background-color: rgba(108, 210, 235, 0.363);
   height: 400px;
@@ -622,21 +532,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media only screen and (max-width: 756px) {
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .textoFooter {
-    margin: 3%;
-  }
 }
 
 .textoFooter {
@@ -656,6 +551,142 @@ footer {
   height: 40px;
 }
 
+@media only screen and (max-width: 650px) {
+  .comoPedir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comoPedir .comoPedir__box {
+    margin: 3%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 756px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .textoFooter {
+    margin: 3%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #formulario {
+    margin: 10vw;
+  }
+}
+
+@media only screen and (max-width: 778px) {
+  .boxInfo__mostris {
+    width: 100%;
+  }
+  #categoriasJuegos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #categoriasJuegos .infoJuegos {
+    margin: 3%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .backgroundOperaciones {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .boxNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .boxTitulo__hijo img {
+    display: none;
+  }
+  .boxTitulo__titulo {
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .comoPedir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comoPedir .comoPedir__box {
+    margin: 3%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #boxInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #boxInfo .boxInfo__mostris {
+    margin: 3%;
+  }
+  #categoriasJuegos {
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .videoInicio video {
+    display: none;
+  }
+}
+
 /* fuentes */
 @font-face {
   font-family: alkinions;
@@ -664,7 +695,7 @@ footer {
 
 /* 404 */
 .error {
-  background-image: url(../img/fondoMostris404.png);
+  background-image: url(../multimedia/img_mostris/fondoMostris404.png);
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;

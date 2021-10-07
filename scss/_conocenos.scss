@@ -1,5 +1,5 @@
 .bodyConocenos {
-    background-image: url(../img/fondoConocenos.png);
+    background-image: url(../multimedia/img_mostris/fondoConocenos.png);
     background-repeat: no-repeat;
 }
 
@@ -12,16 +12,16 @@
     align-items: center;
 
     .boxInfo__mostris {
-        background-color: rgb(255, 255, 255);
+        background-color: $blanco;
         padding: 30px;
         width: 50%;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        box-shadow: 7px 7px 15px #00000091;
+        box-shadow: 7px 7px 15px $sombra;
         height: 100%;
-    
+
         img {
             width: 100px;
             height: 100px;
@@ -41,57 +41,19 @@
 
     .infoJuegos {
         background-color: rgb(255, 255, 255);
-        box-shadow: 7px 7px 15px #00000091;
+        box-shadow: 7px 7px 15px $sombra;
         text-align: center;
         padding: 20px;
         height: 100%;
-    
+
         img {
             width: 100px;
             height: 100px;
             margin: 10px;
         }
-    
+
         p {
             line-height: 30px;
-        }
-    }
-}
-
-@media only screen and (max-width: 1280px) {
-    #boxInfo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-
-        .boxInfo__mostris {
-            margin: 3%;
-        }
-    }
-
-    #categoriasJuegos {
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 1fr 1fr;
-        grid-row-gap: 5%;
-        grid-column-gap: 5%;
-    }
-}
-
-@media only screen and (max-width: 778px) {
-        .boxInfo__mostris {
-             width: 100%;
-        }
-
-        #categoriasJuegos {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            
-        .infoJuegos {
-            margin: 3%;
-            width: 100%;
         }
     }
 }

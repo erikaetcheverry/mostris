@@ -9,6 +9,24 @@
     }
 }
 
+@media only screen and (max-width: 778px) {
+    .boxInfo__mostris {
+        width: 100%;
+    }
+
+    #categoriasJuegos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .infoJuegos {
+            margin: 3%;
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (min-width: 990px) {
     .boxNav {
         display: flex;
@@ -16,6 +34,25 @@
     }
 }
 
+@media only screen and (max-width: 1280px) {
+    #boxInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .boxInfo__mostris {
+            margin: 3%;
+        }
+    }
+
+    #categoriasJuegos {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 5%;
+        grid-column-gap: 5%;
+    }
+}
 
 @media only screen and (max-width: 1300px) {
     .videoInicio video {

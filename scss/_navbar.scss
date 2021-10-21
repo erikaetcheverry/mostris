@@ -4,11 +4,6 @@
 }
 
 .boxNav {
-    @media screen and (min-width: 990px) {
-        display: flex;
-        justify-content: flex-end;
-    }
-
     ul {
         margin-right: 3vw;
 
@@ -20,6 +15,7 @@
             margin: 1vw;
             font-family: alkinions;
             text-transform: uppercase;
+            text-align: center;
         }
     }
 }

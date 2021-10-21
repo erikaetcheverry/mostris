@@ -51,6 +51,21 @@
     }
 }
 
+@media screen and (max-width: 990px) {
+    .barraNavegadora {
+        margin-top: 2vh;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #imgMostris {
+        background-image: url(../multimedia/img_mostris/fondoMostris.gif);
+        background-size: cover;
+    }
+}
+
 @media screen and (min-width: 990px) {
     .boxNav {
         display: flex;

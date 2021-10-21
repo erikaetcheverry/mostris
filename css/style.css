@@ -30,17 +30,6 @@ p {
           filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 
-@media screen and (min-width: 990px) {
-  .boxNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
 .boxNav ul {
   margin-right: 3vw;
 }
@@ -57,6 +46,7 @@ p {
   margin: 1vw;
   font-family: alkinions;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .videoInicio video {
@@ -68,6 +58,7 @@ p {
   opacity: 0.8;
   z-index: -1;
   width: 100%;
+  height: 100vh;
 }
 
 header {
@@ -615,6 +606,19 @@ footer {
 @media only screen and (max-width: 900px) {
   .backgroundOperaciones {
     display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .barraNavegadora {
+    margin-top: 2vh;
+  }
+  .logo {
+    display: none;
+  }
+  #imgMostris {
+    background-image: url(../multimedia/img_mostris/fondoMostris.gif);
+    background-size: cover;
   }
 }
 

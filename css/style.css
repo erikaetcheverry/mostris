@@ -196,6 +196,7 @@ header {
 .bodyConocenos {
   background-image: url(../multimedia/img_mostris/fondoConocenos.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #boxInfo {
@@ -231,7 +232,6 @@ header {
           box-shadow: 7px 7px 15px #00000091;
   height: 100%;
   border-radius: 10px;
-  background-color: #f4ecd4;
 }
 
 #boxInfo .boxInfo__mostris img {
@@ -281,6 +281,7 @@ header {
   background-image: url(../multimedia/img_mostris/fondoJuegos.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   font-family: alkinions;
   text-align: center;
 }
@@ -379,6 +380,7 @@ header {
   background-image: url(../multimedia/img_mostris/fondoGaleria.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .bodyGaleria .boxGaleria {
